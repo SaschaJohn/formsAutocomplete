@@ -58,6 +58,24 @@ namespace ListTest
         {
             MessageBox.Show(this.comboBox1.SelectedIndex.ToString());
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (this.comboBox1.SelectedIndex == -1)
+            {
+                MessageBox.Show(this.comboBox1.Text);
+            }
+            else
+            {
+                var person = x[this.comboBox1.SelectedIndex];
+                MessageBox.Show(p.ToString());
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.comboBox1.Text = this.textBox1.Text;
+        }
     }
 
     public class Person
